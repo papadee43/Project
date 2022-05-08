@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.HH {
+  background-color: ;
+  font-family: 'Roboto', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+  padding-top: 90px; 
+  font-size: 5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	
+  }
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+
+.search .input {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+}
+
+.btn {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+
+
+.search.active .input {
+  width: 200px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+}
+.DD4{
+	padding-top: 20PX;
+	padding-bottom: 20px;
+}
+
+.EXX{
+font-family: "Muli",sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+	overflow: hidden;
+	margin: 0;
+	padding-top: 30px;
+
+}
+
+
+.container {
+	display: flex;
+	width: 90vw;
+}
+
+.panel {
+	  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.panel.active {
+	flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+.GAMES{
+	font-family: cursive;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/*.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+*/
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+
+.w {
+  background-image: url("image/crash.png");
+
+}
+
+.a {
+  background-image: url("image/kick.png");
+
+}
+
+.s {
+background-image: url("image/snare.png");
+}
+
+.d {
+
+background-image: url("image/tom1.png");
+}
+
+.j {
+  background-image: url("image/tom2.png");
+
+}
+
+.k {
+
+background-image: url("image/tom3.png");
+}
+
+.l {
+
+background-image: url("image/tom4.png");
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+.set{
+text-align: center;
+   n -
+
+}
+

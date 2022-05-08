@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  </head>
+  <body style="background-color: #393E46;">
+
+    <div style="width: 70%; margin: auto; text-align: center;" class="container">
+      <h2 style="margin: 30px; font-family: 'Lobster', cursive; text-shadow: 5px 0 #232931; font-size: 8rem; color: #4ECCA3; ">Refresh Me</h2>
+
+      <div style="text-align: center; display: inline-block; " class="dice">
+        <p style="font-size: 2rem; color: #4ECCA3; font-family: cursive;">Player 1</p>
+        <img style="width: 80%;
+}" class="img1" src="images/dice6.png">
+      </div>
+
+      <div style="text-align: center; display: inline-block; " class="dice">
+        <p style="font-size: 2rem; color: #4ECCA3; font-family: cursive;">Player 2</p>
+        <img style="width: 80%;
+}" class="img2" src="images/dice3.png">
+      </div>
+
+    </div>
+  <button type="button" name="button">RUN</button>
+    <script type="text/javascript" src="scripts.js"></script>
+
+
+  </body>
+
+  <footer style="margin-top: 5%; color: #EEEEEE; text-align: center; font-family: cursive;">
+    www 🎲 App Brewery 🎲 com
+  </footer>
+<script type="text/javascript">
+  
+
+   document.querySelector("button").addEventListener("click", function () {
+
+      const randomNum1 = Math.floor(Math.random() * 6) +1
+
+      const randomNum2 =Math.floor(Math.random()*6) + 1
+
+      document.querySelector(".img1").setAttribute("src", "images/dice"+randomNum1+".png")
+
+      document.querySelector(".img2").setAttribute("src","images/dice"+randomNum2+".png")
+
+      if (randomNum1 > randomNum2) {
+          document.querySelector("h2").innerHTML = "🚩Player 1 wins"
+      } else if (randomNum1 === randomNum2) {
+        document.querySelector("h2").innerHTML = "Draw😛"
+      } else {
+        document.querySelector("h2").innerHTML = "Player 2 Wins🚩"
+      }
+
+   })
+
+
+
+
+
+
+
+
+</script>
+
+</html>
